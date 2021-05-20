@@ -30,7 +30,7 @@ class Player {
         break;
       case 'right':
         //inc x pos
-        if (this.x < hw - this.r){
+        if (this.x < w - this.r){
       this.x += this.speed;
       }
         break;
