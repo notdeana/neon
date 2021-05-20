@@ -7,7 +7,6 @@ let w = 700;
 let h = 700;
 let player;
 let coins = [];
-let A = 'left'
 let playerImg;
 let coinImg;
 function preload(){
@@ -63,13 +62,13 @@ function draw() {
 }
 
 function keyPressed() {
-  if (key == A) {
+  if (key == 'a') {
     player.direction = 'left'
-  } else if (key == D) {
+  } else if (key == 'd') {
     player.direction = 'right'
-  } else if (key == W) {
+  } else if (key == 'w') {
     player.direction = 'up'
-  } else if (key == S) {
+  } else if (key == 's') {
     player.direction = 'down'
   } else if (key = ' ') {
     player.direction = 'still';
