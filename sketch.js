@@ -29,7 +29,7 @@ function preload() {
 function setup() {
   //  bg = loadImage('assets/bg/bg.png');
   cnv = createCanvas(w, h);
-  imageMode(CENTER);
+  //imageMode(CENTER);
   rectMode(CENTER);
   textFont('monoSpace');
   player = new Player();
@@ -215,14 +215,16 @@ function level1MouseClicked() {
   console.log('points = ' + points);
   //points +=1;
   if (points >= 10) {
-    state = 'your hamster is fed!';
+    state = 'you made a pizza!';
   }
 }
 
 function youWin() {
   background(pizzaImg);
+  //pizzaImg.resize(700,700);
   textSize(30);
   stroke(355);
+  fill('#4287f5')
   text('you made a pizza!', w / 2, h / 2);
   textSize(30);
   text('click anywhere to make another', w / 2, h * 3 / 4);
