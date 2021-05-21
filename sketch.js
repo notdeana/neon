@@ -16,6 +16,7 @@ let enemyImg;
 let projectileImg;
 let bg;
 let pizzaImg;
+let song;
 
 function preload() {
 
@@ -27,6 +28,7 @@ function preload() {
 }
 
 function setup() {
+  song = loadSound('assets/bgm/Stay_Home_-_Declan_DP_Vlog_No_Copyright_Music.wav');
   //  bg = loadImage('assets/bg/bg.png');
   cnv = createCanvas(w, h);
   //imageMode(CENTER);
@@ -139,6 +141,11 @@ function title() {
 }
 
 function titleMouseClicked() {
+  if (song.isPlaying()) {
+    song.stop();
+  } else {
+  song.play();
+}
   console.log('canvas is clicked on title page');
   state = 'level 1'
 }
@@ -209,6 +216,7 @@ function level1() {
 }
 
 function level1MouseClicked() {
+
   //console.log('points = ' + points);
   //points = points + 1;
   points++
