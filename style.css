@@ -1,9 +1,21 @@
-html, body {
-  margin: 0;
-  padding: 0;
+
+html {
+margin: 10;
+padding: 10;
+}
+body{
+margin: 7px auto 7px auto;
+width: 40%;
+text-align: left;
+font-style: oblique;
+font-family: "monoSpace", monospace;
 }
 canvas {
-  display: block;
-  margin: 70px auto 70px auto;
-
+  margin: auto;
+  top: 17;
+  left: 10;
+  position: absolute;
+display: block;
+border: 7px solid #b1f2c6;
+z-index: -1
 }
