@@ -28,7 +28,7 @@ function preload() {
 }
 
 function setup() {
-  song = loadSound('assets/bgm/Stay_Home_-_Declan_DP_Vlog_No_Copyright_Music.wav');
+  song = loadSound('assets/bgm/stay-home-declan-dp-vlog-no-copyright-music_6doFJsnv.mp4');
   //  bg = loadImage('assets/bg/bg.png');
   cnv = createCanvas(w, h);
   //imageMode(CENTER);
